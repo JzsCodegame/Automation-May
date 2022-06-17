@@ -27,7 +27,7 @@ public class Constructors {
 		
 	}
 	void display() {
-		System.out.println(name+ " " +age+ " " +address );
+		System.out.println(name+ " " +age+ " " +address+"."+"\t\"thats it!\""+"\n no more questions"); //Examples of escape sequence
 	}
 	
 	public static void main(String[] args) {
