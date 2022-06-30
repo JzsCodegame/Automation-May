@@ -1,34 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [SuiteMay1]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="Test1(failed)">
-    <groups>
-      <run>
-        <include name="signIn"/>
-        <include name="Config_Control"/>
-        <include name="Createaccount"/>
-        <exclude name="AccountInfo"/>
-      </run>
-    </groups>
+<suite parallel="classes" name="Failed suite [SuiteMay1]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test1(failed)">
     <classes>
-      <class name="Sprints.June07">
+      <class name="Testmodel.june25th">
         <methods>
-          <include name="createAccount"/>
-          <include name="BrowserClosing"/>
-          <include name="BrowserConfig"/>
-          <include name="PageValidations"/>
-          <include name="setup"/>
-          <include name="validations"/>
-          <include name="validations2"/>
-          <include name="terminate"/>
-          <include name="Emailaddress"/>
-          <include name="Synchronize"/>
-          <include name="config"/>
-        </methods>
-      </class> <!-- Sprints.June07 -->
-      <class name="Sprints.June14">
-        <methods>
-          <include name="ClickMr"/>
           <include name="BrowserClosing"/>
           <include name="BrowserConfig"/>
           <include name="PageValidations"/>
@@ -37,9 +13,24 @@
           <include name="validations2"/>
           <include name="terminate"/>
           <include name="Synchronize"/>
+          <include name="run2"/>
           <include name="config"/>
         </methods>
-      </class> <!-- Sprints.June14 -->
+      </class> <!-- Testmodel.june25th -->
+      <class name="Testmodel.june29th">
+        <methods>
+          <include name="run3"/>
+          <include name="BrowserClosing"/>
+          <include name="BrowserConfig"/>
+          <include name="PageValidations"/>
+          <include name="setup"/>
+          <include name="validations"/>
+          <include name="validations2"/>
+          <include name="terminate"/>
+          <include name="Synchronize"/>
+          <include name="config"/>
+        </methods>
+      </class> <!-- Testmodel.june29th -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [SuiteMay1] -->

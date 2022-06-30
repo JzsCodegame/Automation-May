@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="SuiteMay1">
-  <test thread-count="5"  name="Test1">
-<groups>
+<suite parallel="classes" name="SuiteMay1">
+  <test parallel="classes" thread-count="5"  name="Test1">
+<!--<groups>
    <run>
       <include name = "signIn" />
 		<include name = "Config_Control" />
 		<include name = "Createaccount" />
-		<exclude name = "AccountInfo" />
+		<include name = "AccountInfo" />
 </run> 
-</groups>
+</groups> -->
 	 <classes>
-      <class name="Sprints.June07"/> 
-<class name="Sprints.June14"/> 
-<class name="Sprints.June16"/> 
+      <class name="Testmodel.june21"/> 
+<class name="Testmodel.june25th"/> 
+<class name="Testmodel.june29th"/> 
      </classes>
   </test> <!-- Test1 -->
 </suite> <!-- SuiteMay1 -->

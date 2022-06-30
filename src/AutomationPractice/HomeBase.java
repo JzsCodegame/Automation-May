@@ -25,7 +25,7 @@ public class HomeBase {
 	
 	@BeforeSuite(groups = {"Config_Control"}) //Declare The Annotations
 		public void config() {  //Declare The Method
-			System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver101.exe");//Write The statements or code based on requirement. In this case using driver configurations.
+			System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver102.exe");//Write The statements or code based on requirement. In this case using driver configurations.
 			//System.setProperty("webdriver.edge.driver", "msedgedriver.exe");
 			Google = "https://www.google.com/";//Variable Configurations meaning provide values to variables.
 			AppUrl = "http://automationpractice.com/index.php";
