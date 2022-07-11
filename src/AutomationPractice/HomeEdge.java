@@ -2,7 +2,7 @@ package AutomationPractice;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
-
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -33,9 +33,10 @@ public class HomeEdge {
 		
 		@BeforeSuite(groups = {"Config_Control"}) //Declare The Annotations
 			public void config() {  //Declare The Method
-				System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver102.exe");//Write The statements or code based on requirement. In this case using driver configurations.
-				System.setProperty("webdriver.edge.driver", "Drivers/msedgedriver.exe");
-				System.setProperty("webdriver.firefox.driver", "Drivers/geckodriver.exe");
+				//System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver102.exe");//Write The statements or code based on requirement. In this case using driver configurations.
+				//System.setProperty("webdriver.edge.driver", "Drivers/msedgedriver.exe");
+				//System.setProperty("webdriver.firefox.driver", "Drivers/geckodriver.exe");
+                WebDriverManager.edgedriver().setup();
 				Google = "https://www.google.com/";//Variable Configurations meaning provide values to variables.
 				AppUrl = "http://automationpractice.com/index.php";
 			}

@@ -2,7 +2,7 @@ package AutomationPractice;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
-
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -31,12 +31,23 @@ public class HomeBase {
     public static WebDriverWait Ex;//This is the class for explicit wait and Ex is the object of the class 
     public static FluentWait Fx;
 	public static Wait Fxx;
+    public ChromeOptions options;
 	
 	@BeforeSuite(groups = {"Config_Control"}) //Declare The Annotations
 		public void config() {  //Declare The Method
-			System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver102.exe");//Write The statements or code based on requirement. In this case using driver configurations.
-			System.setProperty("webdriver.edge.driver", "Drivers/msedgedriver.exe");
-			System.setProperty("webdriver.firefox.driver", "Drivers/geckodriver.exe");
+			//System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver102.exe");//Write The statements or code based on requirement. In this case using driver configurations.
+		//	System.setProperty("webdriver.edge.driver", "Drivers/msedgedriver.exe");
+		//	System.setProperty("webdriver.firefox.driver", "Drivers/geckodriver.exe");
+        WebDriver driver = null;
+        WebDriverManager.chromedriver().browserVersion("77.0.3865.40").setup();
+        options = new ChromeOptions();
+        options.addArguments("start-maximized"); 
+        options.addArguments("enable-automation"); 
+        options.addArguments("--no-sandbox"); 
+        options.addArguments("--disable-infobars");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--disable-browser-side-navigation"); 
+        options.addArguments("--disable-gpu");
 			Google = "https://www.google.com/";//Variable Configurations meaning provide values to variables.
 			AppUrl = "http://automationpractice.com/index.php";
 		}
@@ -44,10 +55,10 @@ public class HomeBase {
 	
 	@BeforeTest(groups = {"Config_Control"})
 	public void setup() {
-		
-		driver = new ChromeDriver();//ChromeDriver() is the Constructor ChromeDriver class.So before test we instantiate which driver we will use.
-		fdriver = new FirefoxDriver();
-		Edriver = new EdgeDriver();
+       // WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver(options);//ChromeDriver() is the Constructor ChromeDriver class.So before test we instantiate which driver we will use.
+		//fdriver = new FirefoxDriver();
+		//Edriver = new EdgeDriver();
 		Ex = new WebDriverWait(driver, 15);  //This is what we use for Explicit Wait. This has a driver parameter and the timer parameter.
 		//driver1 = new EdgeDriver();
 		 Fxx = new FluentWait(driver)
@@ -63,8 +74,8 @@ public class HomeBase {
 	    public void Synchronize(){  //
 		
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);// Implicitly wait in general for 10 seconds. We synchronize how the code and machine will run.
-		fdriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		Edriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	//	fdriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		//Edriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	}
 	
 	
