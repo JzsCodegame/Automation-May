@@ -4,16 +4,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import AutomationPractice.HomeBase;
 
 public class SignUpPage2 {
 	WebDriver driver;
-	@FindBy(css ="input[id='newsletter']") WebElement Company;
+	
+	@FindBy(css ="input[id='company']") WebElement Company;
 	//$$ - Console //CSS rule   1      tagname[attribute='value']
 	
 	@FindBy(css ="input#address1") WebElement Address ;
 	           //Css rule   2      tagname#id-value
-	@FindBy(css = "name#address1") WebElement Address2 ;
+	@FindBy(css = "input#address2") WebElement Address2 ;
 			//Css rule   3     tagname.class-value )
 	
 	

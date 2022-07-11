@@ -15,7 +15,7 @@ public class june21 extends HomeBase {
 	
 	
 	
-	@Test(invocationCount = 1)
+	@Test
 	public void run1() {
 		submit = new SignInPage(driver);
 		submit.openSignUp(AppUrl, "xyz123123@gmail.com");

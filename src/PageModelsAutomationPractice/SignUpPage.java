@@ -4,11 +4,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+
+import AutomationPractice.HomeBase;
 
 public class SignUpPage {
 	WebDriver driver;
-	  @FindBy(xpath ="//input[contains(@id,'gender2')]") WebElement Mr; 
+	  @FindBy(xpath ="//input[contains(@id,'gender2')]") WebElement Mrs; 
 	//$x- console	//Rule 3 //tagname[contains(@attribute,'value')] 
 	
 	@FindBy(xpath ="//input[starts-with(@name,'customer_firstname')]") WebElement FirstName; 
@@ -44,8 +47,12 @@ public SignUpPage(WebDriver Driver)  {
 	
 }
 
-public void selectRadiobtn1() {
-	Mr.click();
+@SuppressWarnings("unchecked")
+public void selectRadiobtn1() throws InterruptedException {
+	//Thread.sleep(1500);
+//Fxx.until(ExpectedConditions.elementToBeClickable(Mrs));
+	//Ex.until(ExpectedConditions.elementToBeClickable(Mrs)); //The Expected Conditions For Explicit Wait
+	Mrs.click();   //Needs 2 more seconds to load than usual after the page loads.
 }
 
 
@@ -82,15 +89,15 @@ sinput2.selectByVisibleText(inputyears2);
 	
 	
 	
-	public void fillform( String F, String L, String P, String dy, String mo, int im, String iy, int in, String iy2) {
+	public void fillform( String First, String Last,String Pass, String Day,String Month, int Month2, String Years, int Years2, String Years3) throws InterruptedException {
 
 	this.selectRadiobtn1();
-	this.enterFirstname(F);
-	this.selectDays(L);
-	this.enterPassWord(P);
-	this.selectDays(dy);
-	this.selectMonths(mo,im);
-	this.selectYears(iy, in, iy2);
+	this.enterFirstname(First);
+	this.enterLastName(Last);
+	this.enterPassWord(Pass);
+	this.selectDays(Day);
+	this.selectMonths(Month,Month2);
+	this.selectYears(Years, Years2, Years3);
 	
 
 

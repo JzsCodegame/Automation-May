@@ -3,20 +3,20 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testmodel.june21">
+      <class name="Testmodelfirefox.june21">
         <methods>
-          <include name="BrowserClosing"/>
-          <include name="BrowserConfig"/>
-          <include name="PageValidations"/>
           <include name="setup"/>
-          <include name="validations"/>
+          <include name="run1"/>
+          <include name="BrowserConfig"/>
           <include name="validations2"/>
-          <include name="terminate"/>
-          <include name="run"/>
-          <include name="Synchronize"/>
+          <include name="BrowserClosing"/>
           <include name="config"/>
+          <include name="terminate"/>
+          <include name="PageValidations"/>
+          <include name="validations"/>
+          <include name="Synchronize"/>
         </methods>
-      </class> <!-- Testmodel.june21 -->
+      </class> <!-- Testmodelfirefox.june21 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

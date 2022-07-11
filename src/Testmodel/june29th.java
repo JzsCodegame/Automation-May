@@ -14,6 +14,6 @@ public class june29th extends HomeBase  {
 	@Test
 	public void run3() {
 		submit3 = new SignUpPage2(driver);
-	submit3.fillform2("google", "123", "north","richmond", "virginia","50960", "U.S", "xyz");
+	submit3.fillform2("google", "123", "north","Richmond", "46","50960","21","xyz");
 }
 }

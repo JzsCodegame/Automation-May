@@ -1,227 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="11" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-29T01:35:27 UTC" name="SuiteMay1" finished-at="2022-06-29T01:36:35 UTC" duration-ms="67863">
+  <suite started-at="2022-07-11T01:33:42 UTC" name="Default suite" finished-at="2022-07-11T01:33:42 UTC" duration-ms="672">
     <groups>
     </groups>
-    <test started-at="2022-06-29T01:35:27 UTC" name="Test1" finished-at="2022-06-29T01:36:35 UTC" duration-ms="67863">
-      <class name="Testmodel.june21">
-        <test-method is-config="true" signature="config()[pri:0, instance:Testmodel.june21@470f1802]" started-at="2022-06-29T01:35:27 UTC" name="config" finished-at="2022-06-29T01:35:27 UTC" duration-ms="17" status="PASS">
+    <test started-at="2022-07-11T01:33:42 UTC" name="Default test" finished-at="2022-07-11T01:33:42 UTC" duration-ms="672">
+      <class name="Testmodelfirefox.june21">
+        <test-method is-config="true" signature="config()[pri:0, instance:Testmodelfirefox.june21@cd3fee8]" started-at="2022-07-11T01:33:42 UTC" name="config" finished-at="2022-07-11T01:33:42 UTC" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- config -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Testmodel.june21@470f1802]" started-at="2022-06-29T01:35:27 UTC" name="setup" finished-at="2022-06-29T01:35:40 UTC" duration-ms="12450" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testmodelfirefox.june21@cd3fee8]" started-at="2022-07-11T01:33:42 UTC" name="setup" finished-at="2022-07-11T01:33:42 UTC" duration-ms="413" status="FAIL">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
+at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at AutomationPractice.HomeBaseFirefox.setup(HomeBaseFirefox.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="Synchronize()[pri:0, instance:Testmodel.june21@470f1802]" started-at="2022-06-29T01:35:40 UTC" name="Synchronize" finished-at="2022-06-29T01:35:40 UTC" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="Synchronize()[pri:0, instance:Testmodelfirefox.june21@cd3fee8]" started-at="2022-07-11T01:33:42 UTC" name="Synchronize" finished-at="1970-01-01T00:00:00 UTC" duration-ms="-1657503222558" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Synchronize -->
-        <test-method is-config="true" signature="BrowserConfig()[pri:0, instance:Testmodel.june21@470f1802]" started-at="2022-06-29T01:35:40 UTC" name="BrowserConfig" finished-at="2022-06-29T01:35:40 UTC" duration-ms="269" status="PASS">
+        <test-method is-config="true" signature="BrowserConfig()[pri:0, instance:Testmodelfirefox.june21@cd3fee8]" started-at="2022-07-11T01:33:42 UTC" name="BrowserConfig" finished-at="1970-01-01T00:00:00 UTC" duration-ms="-1657503222587" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserConfig -->
-        <test-method signature="run1()[pri:0, instance:Testmodel.june21@470f1802]" started-at="2022-06-29T01:35:40 UTC" name="run1" finished-at="2022-06-29T01:36:27 UTC" duration-ms="47318" status="PASS">
+        <test-method signature="run1()[pri:0, instance:Testmodelfirefox.june21@cd3fee8]" started-at="2022-07-11T01:33:42 UTC" name="run1" finished-at="2022-07-11T01:33:42 UTC" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
+at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at AutomationPractice.HomeBaseFirefox.setup(HomeBaseFirefox.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- run1 -->
-        <test-method is-config="true" signature="validations()[pri:0, instance:Testmodel.june21@470f1802]" started-at="2022-06-29T01:36:27 UTC" name="validations" finished-at="2022-06-29T01:36:27 UTC" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="validations()[pri:0, instance:Testmodelfirefox.june21@cd3fee8]" started-at="2022-07-11T01:33:42 UTC" name="validations" finished-at="1970-01-01T00:00:00 UTC" duration-ms="-1657503222620" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validations -->
-        <test-method is-config="true" signature="PageValidations()[pri:0, instance:Testmodel.june21@470f1802]" started-at="2022-06-29T01:36:27 UTC" name="PageValidations" finished-at="2022-06-29T01:36:27 UTC" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PageValidations -->
-        <test-method is-config="true" signature="validations2()[pri:0, instance:Testmodel.june21@470f1802]" started-at="2022-06-29T01:36:27 UTC" name="validations2" finished-at="2022-06-29T01:36:27 UTC" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="validations2()[pri:0, instance:Testmodelfirefox.june21@cd3fee8]" started-at="2022-07-11T01:33:42 UTC" name="validations2" finished-at="1970-01-01T00:00:00 UTC" duration-ms="-1657503222624" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validations2 -->
-        <test-method is-config="true" signature="BrowserClosing()[pri:0, instance:Testmodel.june21@470f1802]" started-at="2022-06-29T01:36:27 UTC" name="BrowserClosing" finished-at="2022-06-29T01:36:35 UTC" duration-ms="7669" status="PASS">
+        <test-method is-config="true" signature="PageValidations()[pri:0, instance:Testmodelfirefox.june21@cd3fee8]" started-at="2022-07-11T01:33:42 UTC" name="PageValidations" finished-at="1970-01-01T00:00:00 UTC" duration-ms="-1657503222631" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageValidations -->
+        <test-method is-config="true" signature="BrowserClosing()[pri:0, instance:Testmodelfirefox.june21@cd3fee8]" started-at="2022-07-11T01:33:42 UTC" name="BrowserClosing" finished-at="1970-01-01T00:00:00 UTC" duration-ms="-1657503222692" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserClosing -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:Testmodel.june21@470f1802]" started-at="2022-06-29T01:36:36 UTC" name="terminate" finished-at="2022-06-29T01:36:36 UTC" duration-ms="128" status="PASS">
+        <test-method is-config="true" signature="terminate()[pri:0, instance:Testmodelfirefox.june21@cd3fee8]" started-at="2022-07-11T01:33:43 UTC" name="terminate" finished-at="1970-01-01T00:00:00 UTC" duration-ms="-1657503223141" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
-      </class> <!-- Testmodel.june21 -->
-      <class name="Testmodel.june29th">
-        <test-method is-config="true" signature="Synchronize()[pri:0, instance:Testmodel.june29th@19bb07ed]" started-at="2022-06-29T01:35:40 UTC" name="Synchronize" finished-at="2022-06-29T01:35:40 UTC" duration-ms="35" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Synchronize -->
-        <test-method is-config="true" signature="BrowserConfig()[pri:0, instance:Testmodel.june29th@19bb07ed]" started-at="2022-06-29T01:35:40 UTC" name="BrowserConfig" finished-at="2022-06-29T01:35:40 UTC" duration-ms="272" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BrowserConfig -->
-        <test-method signature="run3()[pri:0, instance:Testmodel.june29th@19bb07ed]" started-at="2022-06-29T01:35:40 UTC" name="run3" finished-at="2022-06-29T01:35:56 UTC" duration-ms="15519" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"input[id='newsletter']"}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'EC2AMAZ-6D3ISV7', ip: '172.31.88.224', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50735}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9363d220161c00a943c91a43d1ead7b9
-*** Element info: {Using=css selector, value=input[id='newsletter']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[id='newsletter']"}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'EC2AMAZ-6D3ISV7', ip: '172.31.88.224', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50735}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9363d220161c00a943c91a43d1ead7b9
-*** Element info: {Using=css selector, value=input[id='newsletter']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at PageModelsAutomationPractice.SignUpPage2.company(SignUpPage2.java:59)
-at PageModelsAutomationPractice.SignUpPage2.fillform2(SignUpPage2.java:103)
-at Testmodel.june29th.run3(june29th.java:17)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- run3 -->
-        <test-method is-config="true" signature="validations()[pri:0, instance:Testmodel.june29th@19bb07ed]" started-at="2022-06-29T01:35:56 UTC" name="validations" finished-at="2022-06-29T01:35:56 UTC" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validations -->
-        <test-method is-config="true" signature="validations2()[pri:0, instance:Testmodel.june29th@19bb07ed]" started-at="2022-06-29T01:35:56 UTC" name="validations2" finished-at="2022-06-29T01:35:56 UTC" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validations2 -->
-        <test-method is-config="true" signature="PageValidations()[pri:0, instance:Testmodel.june29th@19bb07ed]" started-at="2022-06-29T01:35:56 UTC" name="PageValidations" finished-at="2022-06-29T01:35:56 UTC" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PageValidations -->
-      </class> <!-- Testmodel.june29th -->
-      <class name="Testmodel.june25th">
-        <test-method is-config="true" signature="Synchronize()[pri:0, instance:Testmodel.june25th@4b0b0854]" started-at="2022-06-29T01:35:40 UTC" name="Synchronize" finished-at="2022-06-29T01:35:40 UTC" duration-ms="43" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Synchronize -->
-        <test-method is-config="true" signature="BrowserConfig()[pri:0, instance:Testmodel.june25th@4b0b0854]" started-at="2022-06-29T01:35:40 UTC" name="BrowserConfig" finished-at="2022-06-29T01:35:40 UTC" duration-ms="367" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BrowserConfig -->
-        <test-method signature="run2()[pri:0, instance:Testmodel.june25th@4b0b0854]" started-at="2022-06-29T01:35:40 UTC" name="run2" finished-at="2022-06-29T01:36:21 UTC" duration-ms="40376" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[contains(@id,'gender2')]"}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'EC2AMAZ-6D3ISV7', ip: '172.31.88.224', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50735}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9363d220161c00a943c91a43d1ead7b9
-*** Element info: {Using=xpath, value=//input[contains(@id,'gender2')]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[contains(@id,'gender2')]"}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'EC2AMAZ-6D3ISV7', ip: '172.31.88.224', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50735}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9363d220161c00a943c91a43d1ead7b9
-*** Element info: {Using=xpath, value=//input[contains(@id,'gender2')]}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-at PageModelsAutomationPractice.SignUpPage.selectRadiobtn1(SignUpPage.java:48)
-at PageModelsAutomationPractice.SignUpPage.fillform(SignUpPage.java:87)
-at Testmodel.june25th.run2(june25th.java:13)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- run2 -->
-        <test-method is-config="true" signature="validations()[pri:0, instance:Testmodel.june25th@4b0b0854]" started-at="2022-06-29T01:36:21 UTC" name="validations" finished-at="2022-06-29T01:36:21 UTC" duration-ms="16" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validations -->
-        <test-method is-config="true" signature="validations2()[pri:0, instance:Testmodel.june25th@4b0b0854]" started-at="2022-06-29T01:36:21 UTC" name="validations2" finished-at="2022-06-29T01:36:21 UTC" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validations2 -->
-        <test-method is-config="true" signature="PageValidations()[pri:0, instance:Testmodel.june25th@4b0b0854]" started-at="2022-06-29T01:36:21 UTC" name="PageValidations" finished-at="2022-06-29T01:36:21 UTC" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PageValidations -->
-      </class> <!-- Testmodel.june25th -->
-    </test> <!-- Test1 -->
-  </suite> <!-- SuiteMay1 -->
+      </class> <!-- Testmodelfirefox.june21 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
